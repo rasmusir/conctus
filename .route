@@ -1,0 +1,1 @@
+{"timestamp":1428937527,"code":"switch ($_VIEW) {default:$_VIEW='home';include('routes\/home.php');break;case '_view':$path=str_replace('\/_view\/','',$_SERVER['REQUEST_URI']);include($path);break;}"}
