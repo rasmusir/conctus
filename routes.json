@@ -4,6 +4,9 @@
         "target"    : "routes/home.php"
     },
     "routes" : [
-        
+        {
+            "alias" : "projects",
+            "target": "routes/projects.php"
+        }
     ]
 }

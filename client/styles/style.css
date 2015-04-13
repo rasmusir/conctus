@@ -1,0 +1,106 @@
+body, html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    font-family: "Titillium Web", sans-serif;
+}
+
+#topmenu
+{
+    display: table-row;
+    background: #ba2226;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 5px solid rgba(0,0,0,0.4);
+}
+#topmenu:after
+{
+    content: "";
+}
+
+#topmenu #search
+{
+    position: relative;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    box-sizing: border-box;
+    border: 0;
+    background: rgba(0,0,0,0.1);
+    font-size: 22px;
+    float: right;
+    height: 40px;
+    width: 260px;
+    right: 60px;
+    top: 10px;
+    outline: 0;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+
+#maincontainer
+{
+    display: table-row;
+    overflow: hidden;
+    height: 100%;
+}
+
+#sidemenu
+{
+    float: left;
+    background: #9e0b0f;
+    width: 200px;
+    height: 100%;
+    border-right: 5px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+#sidemenu .menu
+{
+    margin-top: 50px;
+}
+
+#sidemenu .menu a
+{
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+#sidemenu .menu a:hover
+{
+    background: rgba(0,0,0,0.1);
+}
+
+#main
+{
+    overflow-y:auto;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: #efefef;
+}
+
+.page
+{
+    color: rgba(0,0,0,0.7);
+    margin: 0 auto;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.page hr
+{
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}

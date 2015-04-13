@@ -1,8 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="/alloy/alloy.js"> </script>
+        <title></title>
+        <meta name="google-signin-client_id" content="81915377937-gotpfkp6his1rrfr6a1vfiqi7q9m0elm.apps.googleusercontent.com">
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="client/styles/style.css">
+        <script>
+        function onSignIn()
+            {
+             console.log("wo");
+            }
+        </script>
     </head>
     <body>
-        Hello, world!
+        <div id="topmenu"> <input type="search" id="search" name="search" placeholder="search for anything" active> </div>
+        <div id="maincontainer">
+            <nav id="sidemenu">
+                <div class="menu">
+                    <a href="/examples">Examples</a>
+                    <a href="/blogs">Blogs</a>
+                    <a href="/projects">Projects</a>
+                </div>
+            </nav>
+            <div id="main" name="page" active>
+
+            </div>
+        </div>
+        <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
     </body>
 </html>
