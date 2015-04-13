@@ -75,6 +75,7 @@ body, html
     text-align: center;
     transition: background 0.2s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #sidemenu .menu a:hover
