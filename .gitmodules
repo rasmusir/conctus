@@ -1,0 +1,4 @@
+[submodule "alloy"]
+	path = alloy
+	url = https://github.com/rasmusir/alloy
+	branch = dev
