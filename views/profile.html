@@ -1,0 +1,58 @@
+
+<div class="profile">
+    <div class="card">
+        <div class="aligner">
+            <h1 name="name" active></h1>
+            <img name="profilepicture" class="profilepicture" active>
+        </div>
+    </div>
+    <div name="menu" active>
+    
+    </div>
+    <div class="card blog">
+        <div>
+            <h2 name="blogtitle" active>There are no blog posts here...</h2>
+            <div name="blogtime" class="blogtime" active></div>
+        </div>
+        <div name="blogcontent" active></div>
+        <br>
+        <div class="righty">
+            <a class="button" href="" name="moreblogs" active>Show more blogs</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card h1
+    {
+        float: left;
+    }
+    .card .profilepicture
+    {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 0px;
+        border-radius: 100%;
+    }
+    .aligner
+    {
+        position: relative;
+        min-height: 200px;
+    }
+    .card.blog h2
+    {
+        display: inline-block;
+    }
+    .card .blogtime
+    {
+        float: right;
+        color: rgba(0,0,0,0.30);
+    }
+</style>
+
+<script type="text/template" name="menutemplate" active>
+    <div class="card mini">
+        <a href="/blog/new">New Blogentry</a>
+    </div>
+</script>

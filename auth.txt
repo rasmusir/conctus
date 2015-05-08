@@ -1,0 +1,42 @@
+Array
+(
+    [REDIRECT_TMP] => C:/PROGRA~2/EASYPH~1.1VC/binaries/tmp
+    [REDIRECT_STATUS] => 200
+    [TMP] => C:/PROGRA~2/EASYPH~1.1VC/binaries/tmp
+    [HTTP_HOST] => localhost:81
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8,da;q=0.6,sv;q=0.4,nb;q=0.2
+    [PATH] => C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\iis express\PHP\v5.5;C:\Windows\system32\inetsrv;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Program Files\Jav;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.1\;C:\Users\Raz\AppData\Local\Android\sdk\tools;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Skype\Phone\;D:\Program Files (x86)\OpenVPN\bin;D:\Program Files (x86)\Steam\steamapps\rasmusir\garrysmod\garrysmod\..\bin;C:\Users\Raz\AppData\Roaming\npm;"C:\Users\Raz\AppData\Local\Android\sdk\tools";C:\PROGRA~2\EASYPH~1.1VC\Apache\bin;C:\PROGRA~2\EASYPH~1.1VC\PHP
+    [SystemRoot] => C:\Windows
+    [COMSPEC] => C:\Windows\system32\cmd.exe
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [WINDIR] => C:\Windows
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache/2.4.7 (Win32) PHP/5.5.8
+    [SERVER_NAME] => localhost
+    [SERVER_ADDR] => ::1
+    [SERVER_PORT] => 81
+    [REMOTE_ADDR] => ::1
+    [DOCUMENT_ROOT] => C:/Users/Raz/Web/apache
+    [REQUEST_SCHEME] => http
+    [CONTEXT_PREFIX] => 
+    [CONTEXT_DOCUMENT_ROOT] => C:/Users/Raz/Web/apache
+    [SERVER_ADMIN] => admin@127.0.0.1
+    [SCRIPT_FILENAME] => C:/Users/Raz/Web/apache/alloy/route.php
+    [REMOTE_PORT] => 12465
+    [REDIRECT_QUERY_STRING] => code=4/WphY2LAhkRW2h4-BIDQZtGYACv7E3zFgI5FPFJPGrH4.4r664jY_DewaPvB8fYmgkJynGlh2mQI
+    [REDIRECT_URL] => /auth
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => GET
+    [QUERY_STRING] => code=4/WphY2LAhkRW2h4-BIDQZtGYACv7E3zFgI5FPFJPGrH4.4r664jY_DewaPvB8fYmgkJynGlh2mQI
+    [REQUEST_URI] => /auth?code=4/WphY2LAhkRW2h4-BIDQZtGYACv7E3zFgI5FPFJPGrH4.4r664jY_DewaPvB8fYmgkJynGlh2mQI
+    [SCRIPT_NAME] => /alloy/route.php
+    [PHP_SELF] => /alloy/route.php
+    [REQUEST_TIME_FLOAT] => 1429069905.015
+    [REQUEST_TIME] => 1429069905
+)

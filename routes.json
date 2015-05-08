@@ -1,12 +1,44 @@
 {
     "default":{
-        "alias"     : "home",
-        "target"    : "routes/home.php"
+        "alias"     : "404",
+        "target"    : "routes/notfound.php"
     },
     "routes" : [
         {
+            "alias" : ["home","/",""],
+            "target": "routes/home.php"
+        },
+        {
             "alias" : "projects",
             "target": "routes/projects.php"
+        },
+        {
+            "alias" : "auth",
+            "target": "routes/auth.php"
+        },
+        {
+            "alias" : ["login","logout"],
+            "target": "routes/login.php"
+        },
+        {
+            "alias" : "profile",
+            "target": "routes/profile.php"
+        },
+        {
+            "alias" : "db",
+            "target": "routes/db.php"
+        },
+        {
+            "alias" : "search",
+            "target": "routes/search.php"
+        },
+        {
+            "alias" : "blog",
+            "target": "routes/blog.php"
+        },
+        {
+            "alias" : "blogs",
+            "target": "routes/blogs.php"
         }
     ]
 }

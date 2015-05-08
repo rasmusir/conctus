@@ -1,0 +1,45 @@
+<div class="card">
+    <h1>/Search</h1>
+</div>
+<div class="deck" name="deck" active>
+    
+</div>
+
+<script name="card" type="text/template" active>
+    <div class="card">
+        <h3 name="title" active></h3>
+        <div name="list" active> </div>
+    </div>
+</script>
+
+<script name="user" type="text/template" active>
+    <a class="button item user" name="link" active>
+        <img name="picture" active>
+        <span name="firstname" active>
+            
+        </span>
+        <span name="lastname" active>
+            
+        </span>
+    </a>
+</script>
+
+<script name="blog" type="text/template" active>
+    <a class="button item" name="link" active>
+        
+    </a>
+</script>
+
+<style>
+    .item img
+    {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 50px;
+    }
+    .item.user
+    {
+        padding-left: 60px !important;
+    }
+</style>

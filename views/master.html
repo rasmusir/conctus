@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script src="/alloy/alloy.js"> </script>
+        <script src="/alloy/require.js" data-main="/client/scripts/main.js" defer async> </script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script src="/client/scripts/anim.js"> </script>
         <title></title>
         <meta name="google-signin-client_id" content="81915377937-gotpfkp6his1rrfr6a1vfiqi7q9m0elm.apps.googleusercontent.com">
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="client/styles/style.css">
-        <script>
-        function onSignIn()
-            {
-             console.log("wo");
-            }
-        </script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/client/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="/client/styles/input.css">
     </head>
     <body>
-        <div id="topmenu"> <input type="search" id="search" name="search" placeholder="search for anything" active> </div>
+        <div id="topmenu">
+            <div id="conctus">Conctus</div>
+            <div class="givenname" name="givenname" active></div>
+            <img name="toppicture" class="profilepicture" active>
+            <input type="search" id="quicksearch" name="search" placeholder="search for anything" active>
+        </div>
         <div id="maincontainer">
             <nav id="sidemenu">
                 <div class="menu">
+                    <a href="/">Frontpage</a>
                     <a href="/examples">Examples</a>
                     <a href="/blogs">Blogs</a>
                     <a href="/projects">Projects</a>
+                    <a href="/db">db</a>
+                </div>
+                <div class="menu" name="memenu" active>
+                        
                 </div>
             </nav>
-            <div id="main" name="page" active>
-
+            <div id="main">
+                <div name="page" id="page" class="page" active>
+                
+                </div>
             </div>
         </div>
-        <!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+        
+        <script type="text/template" name="menuitem" active>
+            <a name="item" href="/login" active>Login</a>
+        </script>
+        
     </body>
 </html>

@@ -5,31 +5,89 @@ body, html
     margin: 0;
     padding: 0;
     display: table;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Roboto",sans-serif;
+    background: #F5F5F5;
+}
+
+::selection
+{
+    background: #FF5252;
+    background: #FF4081;
+    color: white;
+}
+
+h1
+{
+    font-weight: normal;
+}
+h2
+{
+    font-weight: normal;
+}
+h3
+{
+    font-weight: normal;
 }
 
 #topmenu
 {
-    display: table-row;
-    background: #ba2226;
+    background: #F44336;
+    background: #E91E63;
     height: 60px;
     width: 100%;
     box-sizing: border-box;
-    border-bottom: 5px solid rgba(0,0,0,0.4);
+    -border-bottom: 5px solid rgba(0,0,0,0.1);
+    line-height: 60px;
+    color: rgba(255,255,255,1);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.1);
 }
 #topmenu:after
 {
     content: "";
 }
 
-#topmenu #search
+#conctus
+{
+    font-size: 40px;
+    float: left;
+    position: relative;
+    left: 30px;
+}
+
+#topmenu .givenname
+{
+    font-size: 30px;
+    vertical-align:top;
+    float: left;
+    position: relative;
+    margin-left: 80px;
+}
+
+#topmenu .profilepicture
+{
+    height: 50px;
+    position: relative;
+    top: 4px;
+    left: 10px;
+    border-radius: 100%;
+    vertical-align: center;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+#topmenu #quicksearch
 {
     position: relative;
     font-family: "Titillium Web", sans-serif;
     color: white;
     box-sizing: border-box;
     border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
     background: rgba(0,0,0,0.1);
+    background: #E53935;
+    background: #D81B60;
     font-size: 22px;
     float: right;
     height: 40px;
@@ -69,36 +127,42 @@ body, html
 #sidemenu
 {
     float: left;
-    background: #9e0b0f;
+    -background: #9e0b0f;
     width: 200px;
     height: 100%;
-    border-right: 5px solid rgba(0,0,0,0.1);
+    -border-right: 5px solid rgba(0,0,0,0.1);
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 #sidemenu .menu
 {
-    margin-top: 50px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin: 10px;
 }
 
 #sidemenu .menu a
 {
     display: block;
     position: relative;
-    color: #fff;
-    font-size: 22px;
+    color: rgba(0,0,0,0.87);
+    font-size: 18px;
     width: 100%;
     line-height: 40px;
     text-align: center;
     transition: background 0.2s;
     cursor: pointer;
     text-decoration: none;
+    
+    background: white;
 }
 
 #sidemenu .menu a:hover
 {
-    background: rgba(0,0,0,0.1);
+    
 }
+
 
 #main
 {
@@ -106,19 +170,126 @@ body, html
     height: 100%;
     position: relative;
     box-sizing: border-box;
-    background: #efefef;
 }
 
 .page
 {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.87);
     margin: 0 auto;
-    max-width: 800px;
+    width: 1000px;
+    max-width: 100%;
     box-sizing: border-box;
+    position: relative;
+    top: 20px;
 }
 
 .page hr
 {
     border: 0;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card
+{
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+    padding: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.card.mini
+{
+    padding: 0;
+}
+
+
+.deck
+{
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.deck .card
+{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: 10px;
+}
+
+.expander
+{
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.expander:hover
+{
+    height: 200px;
+}
+
+.expander:after
+{
+    position: absolute;
+    z-index: 5;
+    display: block;
+    content: "vvv";
+    text-align: center;
+    color: rgba(0,0,0,0.2);
+    height: 20px;
+    width: 100%;
+    bottom: 0px;
+    box-sizing: border-box;
+    border-top: 1px dotted rgba(0,0,0,0.1);
+    border-bottom: 1px dotted rgba(0,0,0,0.05);
+    background: white;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.popdown
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-150%);
+    background: white;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+    transition: all 0.1s ease-in;
+    padding: 30px;
+}
+
+.popdown.down
+{
+    transform: translate(-50%,50px);
+    transition: all 0.1s ease-out;
+}
+
+.item
+{
+    display: block !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.item:last-child
+{
+    border: none !important;
+}
+
+.righty
+{
+    text-align: right;
 }

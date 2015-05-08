@@ -1,0 +1,24 @@
+<div class="card">
+    <h1>New Blog</h1>
+    Here you can create a new blog entry, simple enter a title and the body of your blog.
+    <br>
+    <br>
+    <form id="blogentry" method="POST" include="content">
+        <input type="text" name="title" placeholder="Epic blog title">
+        <br>
+        <div class="textarea" name="content" contenteditable="true"></div>
+        <br>
+        <div class="righty">
+            <input type="submit" name="save" value="Save for later">
+            <input type="submit" name="publish" value="Publish!">
+        </div>
+    </form>
+</div>
+
+<style>
+    #blogentry input[name=title]
+    {
+        font-size: 20px;
+    }
+    
+</style>
