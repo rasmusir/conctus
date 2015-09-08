@@ -39,6 +39,10 @@
         {
             "alias" : "blogs",
             "target": "routes/blogs.php"
+        },
+        {
+            "alias" : "profiler",
+            "target": "alloy/about.php"
         }
     ]
 }

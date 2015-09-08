@@ -47,6 +47,6 @@ if (isset($_GET['code'])) { // we received the positive auth callback, get the t
 }
 
 if (isset($_SESSION['token']) && $_SESSION['token'])
-  $client->setAccessToken($_SESSION['token']);
+    $client->setAccessToken($_SESSION['token']);
 
 ?>

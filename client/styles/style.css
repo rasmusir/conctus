@@ -200,6 +200,11 @@ h3
     margin: 10px;
     margin-top: 20px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    
+    -border: 16px solid transparent;
+    -background-clip: border-box;
+    -border-image: url("/client/styles/shadow.png") 16 16 repeat;
+    -border-image-outset: 16px;
 }
 
 .card.mini

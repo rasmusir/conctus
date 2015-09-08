@@ -1,11 +1,19 @@
 <?php
+use Alloy\View;
+require_once("alloy/profiler.php");
+\Profiler::Start("Search");
+
 require_once("scripts/db.php");
 require_once("authhelper.php");
 require_once("alloy/view.php");
-use Alloy\View;
 $master = View::Get("views/master.html");
 $search = View::Get("views/search.html");
 require_once("routes/menu.php");
+
+if (View::$update)
+    \Profiler::Start("AJAX");
+else
+    \Profiler::Start("RAW");
 
 if (isset($path[2]))
 {
@@ -26,19 +34,25 @@ if (isset($path[2]))
     {
         $keyword = $split[0];
     }
+    \Profiler::Start("Search");
     Search($tags,$keyword);
+    \Profiler::Stop();
 }
 
 function Search($tags,$keyword)
 {
     if ($tags->all || isset($tags->user))
     {
+        \Profiler::Start("SearchUsers");
         SearchUsers(trim($keyword));
+        \Profiler::Stop();
     }
     
     if ($tags->all || isset($tags->blog))
     {
+        \Profiler::Start("SearchBlogs");
         SearchBlog(trim($keyword),isset($tags->by));
+        \Profiler::Stop();
     }
 }
 
@@ -85,5 +99,10 @@ function SearchUsers($name)
 
 
 $master->SetData("page",$search);
+
+\Profiler::Start("Render");
 $master->Render();
+\Profiler::Stop("Render");
+\Profiler::Stop();
+\Profiler::Stop();
 ?>
