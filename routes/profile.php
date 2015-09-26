@@ -11,22 +11,13 @@ $profile = View::Get("views/profile.html");
 
 require_once("routes/menu.php");
 
-if (View::$update)
-    \Profiler::Start("A.Profile");
-else
-    \Profiler::Start("Profile");
-
 if (isset($path[2]))
 {
-    \Profiler::Start("GetUserFromDB");
     $ud = \Model\User::Get($path[2]);
-    \Profiler::Stop();
     $profile->SetData("name",$ud->firstname . " " . $ud->lastname);
     $profile->SetAttribute("profilepicture","src",$ud->picture."?sz=200");
     
-    \Profiler::Start("GetBlogFromDB");
     $blog = \Model\Blog::GetByUid($path[2]);
-    \Profiler::Stop();
     
     if ($blog != null)
     {
@@ -46,8 +37,5 @@ if (isset($path[2]))
 }
 $master->SetData("page",$profile);
 
-\Profiler::Start("Render");
 $master->Render();
-\Profiler::Stop();
-\Profiler::Stop();
 ?>

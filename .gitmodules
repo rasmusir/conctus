@@ -2,3 +2,7 @@
 	path = alloy
 	url = https://github.com/rasmusir/alloy
 	branch = dev
+[submodule "google-api-php-client"]
+	path = google-api-php-client
+	url = https://github.com/google/google-api-php-client
+	branch = master
